@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="stylesheet" href="output.css">
+  <script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="grid items-center bg-Cream bod">
+
+  <div class="container mx-auto max-w-sm">
+    <!-- Upper -->
+    <div class="bg-Softred p-4 flex justify-between items-center rounded-lg">
+      <div>
+        <p class="text-xs font-normal text-Verypaleorange ">My Balance</p>
+        <span class="block font-bold text-Verypaleorange text-lg">$921.48</span>
+      </div>
+      <div>
+        <img class="w-10" src="images/logo.svg" alt="logo">
+      </div>
+    </div>
+
+    <!-- Middle -->
+    <div class="mt-3">
+      <canvas id="chartCanvas" width="300px" height="200px"></canvas>
+    </div>
+
+    <!-- Line -->
+    <div class="flex justify-center mt-4 mb-4">
+      <hr class="w-72 bg-Softred h-1 rounded-full">
+    </div>
+
+    <!-- Last -->
+    <div class="grid grid-cols-2 gap-x-10 p-5 bg-Softred rounded-lg">
+      <div>
+        <p class="text-xs font-normal text-Verypaleorange">Total this month</p>
+        <span class="text-Verypaleorange font-bold text-xl">$478.33</span>
+      </div>
+      <div class="sum-up">
+        <span class="text-right block text-Verypaleorange">+2.4%</span>
+        <span class="text-right block text-Verypaleorange">from last month</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
