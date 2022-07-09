@@ -1,5 +1,5 @@
 const xmlHTTP = new XMLHttpRequest();
-const url = "http://127.0.0.1:5500/public/data.json";
+const url = "https://expenses-chart-main.netlify.app/data.json";
 xmlHTTP.open('GET', url, true);
 xmlHTTP.send();
 xmlHTTP.onreadystatechange = function () {
